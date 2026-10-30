@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resale-cross-lister"
+version = "0.1.0"
+description = "CLI that drafts eBay and Amazon resale listings from one product record"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Asdale Dynamics, LLC"}]
+keywords = ["resale", "ebay", "amazon", "cli", "llm", "ollama"]
+
+[project.scripts]
+resale-cli = "resale_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["resale_cli*"]
