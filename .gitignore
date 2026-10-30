@@ -1,24 +1,25 @@
+
 # Bytecode / compiled
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-# Virtual environments
-.venv/
-venv/
-.env
-
 # Data created by the CLI at runtime
-data/
-*.json
-
 # Editor / OS
-.vscode/
-.DS_Store
-
 # Packaging
-dist/
-build/
+# Virtual environments
+*$py.class
 *.egg-info/
+*.json
+*.py[cod]
+*.pyc
+*.so
+.DS_Store
 .eggs/
+.env
+.env.*
+.venv/
+.vscode/
+__pycache__/
+build/
+data/
+dist/
+dist/*.tmp
+node_modules/
+venv/
